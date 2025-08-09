@@ -1,5 +1,4 @@
-import MyContext from "@/Helper/Context";
-import "./globals.css";
+// import "./globals.css";
 
 
 export const metadata = {
@@ -8,13 +7,11 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en">
-      <body suppressHydrationWarning>   
-        <MyContext>
-          {children}
-        </MyContext>
+      <body className="m-7 text-xl">
+        Contact Page Mein Apka Swagat Hai   
+        {children}
       </body>
     </html>
   );
